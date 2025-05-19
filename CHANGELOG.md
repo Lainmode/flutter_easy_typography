@@ -14,3 +14,7 @@
 ## [1.0.3+1] - Initial release
 
 - Parameter expansion
+
+## [1.0.4+1] - Initial release
+
+- Added additional parameters
