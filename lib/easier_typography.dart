@@ -50,9 +50,20 @@ class DisplayLg extends StatelessWidget {
   final bool bold;
   final bool italic;
   final bool gray;
+  final TextAlign? align;
+  final int? maxLines;
+  final TextOverflow? overflow;
 
-  const DisplayLg(this.text,
-      {super.key, this.bold = false, this.italic = false, this.gray = false});
+  const DisplayLg(
+    this.text, {
+    super.key,
+    this.bold = false,
+    this.italic = false,
+    this.gray = false,
+    this.align,
+    this.maxLines,
+    this.overflow,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -61,6 +72,10 @@ class DisplayLg extends StatelessWidget {
       style: Theme.of(context).textTheme.displayLarge,
       bold: bold,
       italic: italic,
+      gray: gray,
+      align: align,
+      maxLines: maxLines,
+      overflow: overflow,
     );
   }
 }
@@ -70,9 +85,20 @@ class DisplayMd extends StatelessWidget {
   final bool bold;
   final bool italic;
   final bool gray;
+  final TextAlign? align;
+  final int? maxLines;
+  final TextOverflow? overflow;
 
-  const DisplayMd(this.text,
-      {super.key, this.bold = false, this.italic = false, this.gray = false});
+  const DisplayMd(
+    this.text, {
+    super.key,
+    this.bold = false,
+    this.italic = false,
+    this.gray = false,
+    this.align,
+    this.maxLines,
+    this.overflow,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -82,6 +108,9 @@ class DisplayMd extends StatelessWidget {
       bold: bold,
       italic: italic,
       gray: gray,
+      align: align,
+      maxLines: maxLines,
+      overflow: overflow,
     );
   }
 }
@@ -91,9 +120,20 @@ class DisplaySm extends StatelessWidget {
   final bool bold;
   final bool italic;
   final bool gray;
+  final TextAlign? align;
+  final int? maxLines;
+  final TextOverflow? overflow;
 
-  const DisplaySm(this.text,
-      {super.key, this.bold = false, this.italic = false, this.gray = false});
+  const DisplaySm(
+    this.text, {
+    super.key,
+    this.bold = false,
+    this.italic = false,
+    this.gray = false,
+    this.align,
+    this.maxLines,
+    this.overflow,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -103,6 +143,9 @@ class DisplaySm extends StatelessWidget {
       bold: bold,
       italic: italic,
       gray: gray,
+      align: align,
+      maxLines: maxLines,
+      overflow: overflow,
     );
   }
 }
@@ -113,9 +156,20 @@ class HeadingLg extends StatelessWidget {
   final bool bold;
   final bool italic;
   final bool gray;
+  final TextAlign? align;
+  final int? maxLines;
+  final TextOverflow? overflow;
 
-  const HeadingLg(this.text,
-      {super.key, this.bold = false, this.italic = false, this.gray = false});
+  const HeadingLg(
+    this.text, {
+    super.key,
+    this.bold = false,
+    this.italic = false,
+    this.gray = false,
+    this.align,
+    this.maxLines,
+    this.overflow,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -125,6 +179,9 @@ class HeadingLg extends StatelessWidget {
       bold: bold,
       italic: italic,
       gray: gray,
+      align: align,
+      maxLines: maxLines,
+      overflow: overflow,
     );
   }
 }
@@ -134,8 +191,20 @@ class HeadingMd extends StatelessWidget {
   final bool bold;
   final bool italic;
   final bool gray;
-  const HeadingMd(this.text,
-      {super.key, this.bold = false, this.italic = false, this.gray = false});
+  final TextAlign? align;
+  final int? maxLines;
+  final TextOverflow? overflow;
+
+  const HeadingMd(
+    this.text, {
+    super.key,
+    this.bold = false,
+    this.italic = false,
+    this.gray = false,
+    this.align,
+    this.maxLines,
+    this.overflow,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -145,6 +214,9 @@ class HeadingMd extends StatelessWidget {
       bold: bold,
       italic: italic,
       gray: gray,
+      align: align,
+      maxLines: maxLines,
+      overflow: overflow,
     );
   }
 }
@@ -154,9 +226,20 @@ class HeadingSm extends StatelessWidget {
   final bool bold;
   final bool italic;
   final bool gray;
+  final TextAlign? align;
+  final int? maxLines;
+  final TextOverflow? overflow;
 
-  const HeadingSm(this.text,
-      {super.key, this.bold = false, this.italic = false, this.gray = false});
+  const HeadingSm(
+    this.text, {
+    super.key,
+    this.bold = false,
+    this.italic = false,
+    this.gray = false,
+    this.align,
+    this.maxLines,
+    this.overflow,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -166,6 +249,9 @@ class HeadingSm extends StatelessWidget {
       bold: bold,
       italic: italic,
       gray: gray,
+      align: align,
+      maxLines: maxLines,
+      overflow: overflow,
     );
   }
 }
@@ -176,8 +262,20 @@ class TitleText extends StatelessWidget {
   final bool bold;
   final bool italic;
   final bool gray;
-  const TitleText(this.text,
-      {super.key, this.bold = false, this.italic = false, this.gray = false});
+  final TextAlign? align;
+  final int? maxLines;
+  final TextOverflow? overflow;
+
+  const TitleText(
+    this.text, {
+    super.key,
+    this.bold = false,
+    this.italic = false,
+    this.gray = false,
+    this.align,
+    this.maxLines,
+    this.overflow,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -187,6 +285,9 @@ class TitleText extends StatelessWidget {
       bold: bold,
       italic: italic,
       gray: gray,
+      align: align,
+      maxLines: maxLines,
+      overflow: overflow,
     );
   }
 }
@@ -196,9 +297,20 @@ class SubtitleText extends StatelessWidget {
   final bool bold;
   final bool italic;
   final bool gray;
+  final TextAlign? align;
+  final int? maxLines;
+  final TextOverflow? overflow;
 
-  const SubtitleText(this.text,
-      {super.key, this.bold = false, this.italic = false, this.gray = false});
+  const SubtitleText(
+    this.text, {
+    super.key,
+    this.bold = false,
+    this.italic = false,
+    this.gray = false,
+    this.align,
+    this.maxLines,
+    this.overflow,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -208,6 +320,9 @@ class SubtitleText extends StatelessWidget {
       bold: bold,
       italic: italic,
       gray: gray,
+      align: align,
+      maxLines: maxLines,
+      overflow: overflow,
     );
   }
 }
@@ -218,9 +333,20 @@ class ParagraphLg extends StatelessWidget {
   final bool bold;
   final bool italic;
   final bool gray;
+  final TextAlign? align;
+  final int? maxLines;
+  final TextOverflow? overflow;
 
-  const ParagraphLg(this.text,
-      {super.key, this.bold = false, this.italic = false, this.gray = false});
+  const ParagraphLg(
+    this.text, {
+    super.key,
+    this.bold = false,
+    this.italic = false,
+    this.gray = false,
+    this.align,
+    this.maxLines,
+    this.overflow,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -230,6 +356,9 @@ class ParagraphLg extends StatelessWidget {
       bold: bold,
       italic: italic,
       gray: gray,
+      align: align,
+      maxLines: maxLines,
+      overflow: overflow,
     );
   }
 }
@@ -239,8 +368,20 @@ class Paragraph extends StatelessWidget {
   final bool bold;
   final bool italic;
   final bool gray;
-  const Paragraph(this.text,
-      {super.key, this.bold = false, this.italic = false, this.gray = false});
+  final TextAlign? align;
+  final int? maxLines;
+  final TextOverflow? overflow;
+
+  const Paragraph(
+    this.text, {
+    super.key,
+    this.bold = false,
+    this.italic = false,
+    this.gray = false,
+    this.align,
+    this.maxLines,
+    this.overflow,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -250,6 +391,9 @@ class Paragraph extends StatelessWidget {
       bold: bold,
       italic: italic,
       gray: gray,
+      align: align,
+      maxLines: maxLines,
+      overflow: overflow,
     );
   }
 }
@@ -259,9 +403,20 @@ class ParagraphSm extends StatelessWidget {
   final bool bold;
   final bool italic;
   final bool gray;
+  final TextAlign? align;
+  final int? maxLines;
+  final TextOverflow? overflow;
 
-  const ParagraphSm(this.text,
-      {super.key, this.bold = false, this.italic = false, this.gray = false});
+  const ParagraphSm(
+    this.text, {
+    super.key,
+    this.bold = false,
+    this.italic = false,
+    this.gray = false,
+    this.align,
+    this.maxLines,
+    this.overflow,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -271,18 +426,33 @@ class ParagraphSm extends StatelessWidget {
       bold: bold,
       italic: italic,
       gray: gray,
+      align: align,
+      maxLines: maxLines,
+      overflow: overflow,
     );
   }
 }
 
-// === Labels / Captions ===
+// === Labels ===
 class Label extends StatelessWidget {
   final String text;
   final bool bold;
   final bool italic;
   final bool gray;
-  const Label(this.text,
-      {super.key, this.bold = false, this.italic = false, this.gray = false});
+  final TextAlign? align;
+  final int? maxLines;
+  final TextOverflow? overflow;
+
+  const Label(
+    this.text, {
+    super.key,
+    this.bold = false,
+    this.italic = false,
+    this.gray = false,
+    this.align,
+    this.maxLines,
+    this.overflow,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -292,6 +462,9 @@ class Label extends StatelessWidget {
       bold: bold,
       italic: italic,
       gray: gray,
+      align: align,
+      maxLines: maxLines,
+      overflow: overflow,
     );
   }
 }
@@ -301,9 +474,20 @@ class LabelSm extends StatelessWidget {
   final bool bold;
   final bool italic;
   final bool gray;
+  final TextAlign? align;
+  final int? maxLines;
+  final TextOverflow? overflow;
 
-  const LabelSm(this.text,
-      {super.key, this.bold = false, this.italic = false, this.gray = false});
+  const LabelSm(
+    this.text, {
+    super.key,
+    this.bold = false,
+    this.italic = false,
+    this.gray = false,
+    this.align,
+    this.maxLines,
+    this.overflow,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -313,6 +497,9 @@ class LabelSm extends StatelessWidget {
       bold: bold,
       italic: italic,
       gray: gray,
+      align: align,
+      maxLines: maxLines,
+      overflow: overflow,
     );
   }
 }
