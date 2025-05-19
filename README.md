@@ -1,4 +1,4 @@
-# EasyTypography
+# EasierTypography
 
 A lightweight Flutter package that simplifies text styling using semantic widgets like `DisplayLg`, `HeadingMd`, `Paragraph`, and `Label`.
 

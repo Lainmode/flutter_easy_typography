@@ -9,6 +9,7 @@ class EText extends StatelessWidget {
   final bool italic;
   final TextAlign? align;
   final int? maxLines;
+  final bool gray;
 
   final TextOverflow? overflow;
 
@@ -18,6 +19,7 @@ class EText extends StatelessWidget {
     this.style,
     this.bold = false,
     this.italic = false,
+    this.gray = false,
     this.align,
     this.maxLines,
     this.overflow,
@@ -29,6 +31,7 @@ class EText extends StatelessWidget {
     final finalStyle = baseStyle.copyWith(
       fontWeight: bold ? FontWeight.bold : baseStyle.fontWeight,
       fontStyle: italic ? FontStyle.italic : baseStyle.fontStyle,
+      color: gray ? Colors.grey : baseStyle.color,
     );
 
     return Text(
@@ -46,9 +49,10 @@ class DisplayLg extends StatelessWidget {
   final String text;
   final bool bold;
   final bool italic;
+  final bool gray;
 
   const DisplayLg(this.text,
-      {super.key, this.bold = false, this.italic = false});
+      {super.key, this.bold = false, this.italic = false, this.gray = false});
 
   @override
   Widget build(BuildContext context) {
@@ -65,9 +69,10 @@ class DisplayMd extends StatelessWidget {
   final String text;
   final bool bold;
   final bool italic;
+  final bool gray;
 
   const DisplayMd(this.text,
-      {super.key, this.bold = false, this.italic = false});
+      {super.key, this.bold = false, this.italic = false, this.gray = false});
 
   @override
   Widget build(BuildContext context) {
@@ -76,6 +81,7 @@ class DisplayMd extends StatelessWidget {
       style: Theme.of(context).textTheme.displayMedium,
       bold: bold,
       italic: italic,
+      gray: gray,
     );
   }
 }
@@ -84,9 +90,10 @@ class DisplaySm extends StatelessWidget {
   final String text;
   final bool bold;
   final bool italic;
+  final bool gray;
 
   const DisplaySm(this.text,
-      {super.key, this.bold = false, this.italic = false});
+      {super.key, this.bold = false, this.italic = false, this.gray = false});
 
   @override
   Widget build(BuildContext context) {
@@ -95,6 +102,7 @@ class DisplaySm extends StatelessWidget {
       style: Theme.of(context).textTheme.displaySmall,
       bold: bold,
       italic: italic,
+      gray: gray,
     );
   }
 }
@@ -104,9 +112,10 @@ class HeadingLg extends StatelessWidget {
   final String text;
   final bool bold;
   final bool italic;
+  final bool gray;
 
   const HeadingLg(this.text,
-      {super.key, this.bold = false, this.italic = false});
+      {super.key, this.bold = false, this.italic = false, this.gray = false});
 
   @override
   Widget build(BuildContext context) {
@@ -115,6 +124,7 @@ class HeadingLg extends StatelessWidget {
       style: Theme.of(context).textTheme.headlineLarge,
       bold: bold,
       italic: italic,
+      gray: gray,
     );
   }
 }
@@ -123,9 +133,9 @@ class HeadingMd extends StatelessWidget {
   final String text;
   final bool bold;
   final bool italic;
-
+  final bool gray;
   const HeadingMd(this.text,
-      {super.key, this.bold = false, this.italic = false});
+      {super.key, this.bold = false, this.italic = false, this.gray = false});
 
   @override
   Widget build(BuildContext context) {
@@ -134,6 +144,7 @@ class HeadingMd extends StatelessWidget {
       style: Theme.of(context).textTheme.headlineMedium,
       bold: bold,
       italic: italic,
+      gray: gray,
     );
   }
 }
@@ -142,9 +153,10 @@ class HeadingSm extends StatelessWidget {
   final String text;
   final bool bold;
   final bool italic;
+  final bool gray;
 
   const HeadingSm(this.text,
-      {super.key, this.bold = false, this.italic = false});
+      {super.key, this.bold = false, this.italic = false, this.gray = false});
 
   @override
   Widget build(BuildContext context) {
@@ -153,6 +165,7 @@ class HeadingSm extends StatelessWidget {
       style: Theme.of(context).textTheme.headlineSmall,
       bold: bold,
       italic: italic,
+      gray: gray,
     );
   }
 }
@@ -162,9 +175,9 @@ class TitleText extends StatelessWidget {
   final String text;
   final bool bold;
   final bool italic;
-
+  final bool gray;
   const TitleText(this.text,
-      {super.key, this.bold = false, this.italic = false});
+      {super.key, this.bold = false, this.italic = false, this.gray = false});
 
   @override
   Widget build(BuildContext context) {
@@ -173,6 +186,7 @@ class TitleText extends StatelessWidget {
       style: Theme.of(context).textTheme.titleLarge,
       bold: bold,
       italic: italic,
+      gray: gray,
     );
   }
 }
@@ -181,9 +195,10 @@ class SubtitleText extends StatelessWidget {
   final String text;
   final bool bold;
   final bool italic;
+  final bool gray;
 
   const SubtitleText(this.text,
-      {super.key, this.bold = false, this.italic = false});
+      {super.key, this.bold = false, this.italic = false, this.gray = false});
 
   @override
   Widget build(BuildContext context) {
@@ -192,6 +207,7 @@ class SubtitleText extends StatelessWidget {
       style: Theme.of(context).textTheme.titleMedium,
       bold: bold,
       italic: italic,
+      gray: gray,
     );
   }
 }
@@ -201,9 +217,10 @@ class ParagraphLg extends StatelessWidget {
   final String text;
   final bool bold;
   final bool italic;
+  final bool gray;
 
   const ParagraphLg(this.text,
-      {super.key, this.bold = false, this.italic = false});
+      {super.key, this.bold = false, this.italic = false, this.gray = false});
 
   @override
   Widget build(BuildContext context) {
@@ -212,6 +229,7 @@ class ParagraphLg extends StatelessWidget {
       style: Theme.of(context).textTheme.bodyLarge,
       bold: bold,
       italic: italic,
+      gray: gray,
     );
   }
 }
@@ -220,9 +238,9 @@ class ParagraphMd extends StatelessWidget {
   final String text;
   final bool bold;
   final bool italic;
-
+  final bool gray;
   const ParagraphMd(this.text,
-      {super.key, this.bold = false, this.italic = false});
+      {super.key, this.bold = false, this.italic = false, this.gray = false});
 
   @override
   Widget build(BuildContext context) {
@@ -231,6 +249,7 @@ class ParagraphMd extends StatelessWidget {
       style: Theme.of(context).textTheme.bodyMedium,
       bold: bold,
       italic: italic,
+      gray: gray,
     );
   }
 }
@@ -239,9 +258,10 @@ class Paragraph extends StatelessWidget {
   final String text;
   final bool bold;
   final bool italic;
+  final bool gray;
 
   const Paragraph(this.text,
-      {super.key, this.bold = false, this.italic = false});
+      {super.key, this.bold = false, this.italic = false, this.gray = false});
 
   @override
   Widget build(BuildContext context) {
@@ -250,6 +270,7 @@ class Paragraph extends StatelessWidget {
       style: Theme.of(context).textTheme.bodySmall,
       bold: bold,
       italic: italic,
+      gray: gray,
     );
   }
 }
@@ -259,8 +280,9 @@ class Label extends StatelessWidget {
   final String text;
   final bool bold;
   final bool italic;
-
-  const Label(this.text, {super.key, this.bold = false, this.italic = false});
+  final bool gray;
+  const Label(this.text,
+      {super.key, this.bold = false, this.italic = false, this.gray = false});
 
   @override
   Widget build(BuildContext context) {
@@ -269,6 +291,7 @@ class Label extends StatelessWidget {
       style: Theme.of(context).textTheme.labelLarge,
       bold: bold,
       italic: italic,
+      gray: gray,
     );
   }
 }
@@ -277,8 +300,10 @@ class LabelSm extends StatelessWidget {
   final String text;
   final bool bold;
   final bool italic;
+  final bool gray;
 
-  const LabelSm(this.text, {super.key, this.bold = false, this.italic = false});
+  const LabelSm(this.text,
+      {super.key, this.bold = false, this.italic = false, this.gray = false});
 
   @override
   Widget build(BuildContext context) {
@@ -287,6 +312,7 @@ class LabelSm extends StatelessWidget {
       style: Theme.of(context).textTheme.labelSmall,
       bold: bold,
       italic: italic,
+      gray: gray,
     );
   }
 }
