@@ -1,6 +1,6 @@
 name: easier_typography
 description: "An easy way to use typography in Flutter. It provides a set of pre-defined text styles and a simple API for creating custom text styles."
-version: 1.0.2+1
+version: 1.0.3+1
 
 homepage: https://github.com/Lainmode/flutter_easy_typography
 
