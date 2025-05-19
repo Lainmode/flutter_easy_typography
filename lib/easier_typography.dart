@@ -234,12 +234,12 @@ class ParagraphLg extends StatelessWidget {
   }
 }
 
-class ParagraphMd extends StatelessWidget {
+class Paragraph extends StatelessWidget {
   final String text;
   final bool bold;
   final bool italic;
   final bool gray;
-  const ParagraphMd(this.text,
+  const Paragraph(this.text,
       {super.key, this.bold = false, this.italic = false, this.gray = false});
 
   @override
@@ -254,13 +254,13 @@ class ParagraphMd extends StatelessWidget {
   }
 }
 
-class Paragraph extends StatelessWidget {
+class ParagraphSm extends StatelessWidget {
   final String text;
   final bool bold;
   final bool italic;
   final bool gray;
 
-  const Paragraph(this.text,
+  const ParagraphSm(this.text,
       {super.key, this.bold = false, this.italic = false, this.gray = false});
 
   @override

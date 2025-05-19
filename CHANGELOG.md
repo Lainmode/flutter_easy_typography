@@ -6,3 +6,7 @@
 ## [1.0.1+1] - Initial release
 
 - Minor changes
+
+## [1.0.2+1] - Initial release
+
+- Bug fix
